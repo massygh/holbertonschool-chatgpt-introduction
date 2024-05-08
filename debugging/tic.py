@@ -1,9 +1,11 @@
 #!/usr/bin/python3
 
+
 def print_board(board):
     for row in board:
         print(" | ".join(row))
         print("-" * 5)
+
 
 def check_winner(board):
     for row in board:
@@ -21,6 +23,7 @@ def check_winner(board):
         return board[0][2]
 
     return None
+
 
 def tic_tac_toe():
     board = [[" "]*3 for _ in range(3)]
@@ -45,5 +48,7 @@ def tic_tac_toe():
     else:
         print("It's a tie!")
 
+
 tic_tac_toe()
+
 
